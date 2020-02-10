@@ -8,12 +8,17 @@ This custom Create-React-App (CRA) template is specific to the S4 NetQuest devel
   * react-router-dom
   * env-cmd ( load different .env configurations per environment )
   * node-sass ( add sass compiling to CRA )
-* Custom Scripts:
+* Custom NPM Scripts:
   * `install-dev-deps` ( install storybook, a number of storybook addons )
     * Run this command after CRA installs to install these devDependencies - these cannot be included in the custom template
   * `build:stage` ( runs a production build using the .env.staging file as environment variables )
   * `storybook` ( runs storybook dev server )
   * `build-storybook` ( builds the storybook for deployment to a server )
+* Features
+  * Sass compiles from any imported .sass file ( default `src/style/index.sass` is imported to `src/index.js` )
+  * Bulma 0.8.0 sass files are included in `src/style/bulma-0.8.0` and imported to project by default
+  * Absolute imports from `/src` are enabled, relative imports are not necessary
+  * Service Worker registration is set via an environment variable at build time `REACT_APP_REGISTER_SERVICE_WORKER` (`1` or `0`)
 
 ### Installing
 1. `npx create-react-app PROJECT_NAME --template cra-template-s4netquest-default`

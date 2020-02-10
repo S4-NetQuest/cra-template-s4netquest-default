@@ -15,6 +15,11 @@ This custom Create-React-App (CRA) template is specific to the S4 NetQuest devel
   * `build:stage` ( runs a production build using the .env.staging file as environment variables )
   * `storybook` ( runs storybook dev server )
   * `build-storybook` ( builds the storybook for deployment to a server )
+* Features
+  * Sass compiles from any imported .sass file ( default `src/style/index.sass` is imported to `src/index.js` )
+  * Bulma 0.8.0 sass files are included in `src/style/bulma-0.8.0` and imported to project by default
+  * Absolute imports from `/src` are enabled, relative imports are not necessary
+  * Service Worker registration is set via an environment variable at build time `REACT_APP_REGISTER_SERVICE_WORKER` (`1` or `0`)
 
 ### Installing
 1. `npx create-react-app PROJECT_NAME --template cra-template-s4netquest-default`
