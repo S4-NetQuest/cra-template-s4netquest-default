@@ -2,7 +2,7 @@
 
 Please see the original CRA README.md contents below this custom template information.
 
-This custom Create-React-App (CRA) template is specific to the S4 NetQuest development process. It includes our most commonly utilized npm packages and project structure. Anyone is welcome to use this template, however it may change at any time without notice and with minimal regard to your use case (please fork your own version if you really like it). Here is what this template includes in additional to the CRA defaults:
+This custom Create-React-App (CRA) template is specific to the S4 NetQuest development process. It includes our most commonly utilized npm packages and project structure. Anyone is welcome to use this template, however it may change at any time without notice and with minimal regard to your use case (please fork your own version if you really like it). Here is what this template includes in addition to the CRA defaults:
 
 * Dependencies:
   * react-app-polyfill ( imported in index.js for 'ie11' and 'stable' )
