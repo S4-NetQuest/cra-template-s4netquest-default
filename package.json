@@ -1,6 +1,6 @@
 {
   "name": "cra-template-s4netquest-default",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "keywords": [
     "react",
     "create-react-app",
@@ -10,16 +10,17 @@
   ],
   "description": "S4 NetQuest default CRA template. Absolute imports, sass, bulma, and our preferred directory structure.",
   "main": "template.json",
+  "author": "S4 NetQuest",
   "repository": {
     "type": "git",
-    "url": "https://github.com/JayV30/cra-template-s4netquest-default.git"
+    "url": "https://github.com/S4-NetQuest/cra-template-s4netquest-default.git"
   },
   "license": "MIT",
   "engines": {
     "node": ">=8"
   },
   "bugs": {
-    "url": "https://github.com/JayV30/cra-template-s4netquest-default/issues"
+    "url": "https://github.com/S4-NetQuest/cra-template-s4netquest-default/issues"
   },
   "files": [
     "template",
