@@ -1,5 +1,5 @@
 # CREATE REACT APP TEMPLATE
-## S4 NetQuest : default v2.0.1
+## S4 NetQuest : default v2.0.2
 
 Presented by:
 

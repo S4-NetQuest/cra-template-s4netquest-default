@@ -1,3 +1,6 @@
+# 2.0.2 (June 21, 2021)
+* Fix to storybook installation configuration
+
 # 2.0.1 (June 21, 2021)
 * Revise template.json to place all key/values within a "package" key
 
