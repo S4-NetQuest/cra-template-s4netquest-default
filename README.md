@@ -1,5 +1,5 @@
 # CREATE REACT APP TEMPLATE
-## S4 NetQuest : default v2.0.0
+## S4 NetQuest : default v2.0.1
 
 Presented by:
 
@@ -11,7 +11,7 @@ This custom Create-React-App (CRA) template is specific to the S4 NetQuest devel
   * react-app-polyfill ( imported in index.js for 'ie11' and 'stable' )
   * react-router-dom
   * env-cmd ( load different .env configurations per environment )
-  * node-sass ( add sass compiling to CRA )
+  * sass ( add dart-sass compiling to CRA )
 * Custom NPM Scripts:
   * `install-dev-deps` ( install storybook, a number of storybook addons )
     * Run this command after CRA installs to install these devDependencies - these cannot be included in the custom template
@@ -26,5 +26,4 @@ This custom Create-React-App (CRA) template is specific to the S4 NetQuest devel
 ### Installing
 1. `npx create-react-app PROJECT_NAME --template cra-template-s4netquest-default`
 2. after install, run `npm run install-dev-deps`
-3. use `_package-json-overrides.json` to override the values in the created `package.json` file ( `_package-json-overrides.json` can then be deleted )
-4. begin working on your project!
+3. begin working on your project!

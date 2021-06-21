@@ -1,16 +1,28 @@
 {
-  "dependencies": {
-    "react-app-polyfill": "latest",
-    "react-router-dom": "latest",
-    "env-cmd": "latest",
-    "node-sass": "npm:sass@latest"
-  },
-  "scripts": {
-    "install-dev-deps": "npx -p @storybook/cli sb init --type react_scripts && npm install --save-dev @storybook/addon-actions @storybook/addon-info @storybook/addon-knobs @storybook/addon-links @storybook/addons storybook-react-router",
-    "start": "env-cmd -e default,development react-scripts start",
-    "build:stage": "env-cmd -e default,staging react-scripts build",
-    "build": "env-cmd -e default,production react-scripts build",
-    "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+  "package": {
+    "dependencies": {
+      "react-app-polyfill": "latest",
+      "react-router-dom": "latest",
+      "env-cmd": "latest",
+      "node-sass": "npm:sass@latest"
+    },
+    "scripts": {
+      "install-dev-deps": "npx -p @storybook/cli sb init --type react_scripts && npm install --save-dev @storybook/addon-actions @storybook/addon-info @storybook/addon-knobs @storybook/addon-links @storybook/addons storybook-react-router",
+      "start": "env-cmd -e default,development react-scripts start",
+      "build:stage": "env-cmd -e default,staging react-scripts build",
+      "build": "env-cmd -e default,production react-scripts build",
+      "storybook": "start-storybook -p 9009 -s public",
+      "build-storybook": "build-storybook -s public"
+    },
+    "browserslist": {
+      "production": [
+        "since 2010"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    }
   }
 }
