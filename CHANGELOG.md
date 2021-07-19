@@ -1,3 +1,8 @@
+# 2.0.3 (July 19, 2021)
+* Fix analytics.js environment variable check
+* Update Bulma to v0.9.3
+* Remove reportWebVitals include (appears to be incompatible with absolute path resolving)
+
 # 2.0.2 (June 21, 2021)
 * Fix to storybook installation configuration
 
