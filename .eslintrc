@@ -1,0 +1,79 @@
+{
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "plugins": [
+    "import",
+    "jsx-a11y",
+    "react",
+    "react-hooks"
+  ],
+  "rules": {
+    // we don't necessarily care about lf vs crlf as we are nearly always on windows
+    "linebreak-style": "off",
+    // max length is a very subjective rule so we've bumped up the max length and set only to warn
+    // please feel free to override on a per-file or per-line basis if it looks good
+    "max-len": [
+      "warn",
+      {
+        "code": 140,
+        "ignoreTemplateLiterals": true,
+        "ignoreUrls": true,
+        "ignoreStrings": true
+       }
+    ],
+    // the don't reassign parameters rule doesn't play well with .reduce()
+    // if you experience an issue, use "accum" as the first parameter name and this rule will be ignored
+    // or override the rule on a per-line basis
+    "no-param-reassign": [
+      "error",
+      {
+        "ignorePropertyModificationsFor": ["accum"]
+      }
+    ],
+    // this rule was too restrictive when dealing with nested json objects and arrays
+    "react/forbid-prop-types": [
+      "warn",
+      {
+        "forbid": ["all"]
+      }
+    ],
+    // .js can also be used as a jsx filename extension
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ]
+  },
+  // storybook has lots of props spreading and anonymous default exporting so turn those rules off
+  "overrides": [
+    {
+      "files": [
+        "**/*.stories.*"
+      ],
+      "rules": {
+        "import/no-anonymous-default-export": "off",
+        "react/jsx-props-no-spreading": "off"
+      }
+    }
+  ],
+  "settings": {
+    // this allows us to use absolute imports in 'src' and still lint imports properly
+    "import/resolver": {
+      "webpack": {
+        "config": {
+          "resolve": {
+            "modules": ["node_modules", "src/"]
+          }
+        }
+      }
+    }
+  },
+  // add anything you want ignored here
+  "ignorePatterns": ["node_modules", "jsconfig.json"]
+}
