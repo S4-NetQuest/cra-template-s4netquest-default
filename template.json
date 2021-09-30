@@ -1,18 +1,21 @@
 {
   "package": {
     "dependencies": {
-      "react-app-polyfill": "latest",
-      "react-router-dom": "latest",
       "env-cmd": "latest",
-      "node-sass": "npm:sass@latest"
+      "framer-motion": "latest",
+      "sass": "latest",
+      "prop-types": "latest",
+      "react-app-polyfill": "latest",
+      "react-router-dom": "latest"
     },
     "scripts": {
-      "install-dev-deps": "npx sb init --yes",
+      "install-dev-deps": "npx --yes sb init && npm install --save-dev eslint eslint-config-airbnb eslint-import-resolver-webpack eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks",
       "start": "env-cmd -e default,development react-scripts start",
       "build:stage": "env-cmd -e default,staging react-scripts build",
       "build": "env-cmd -e default,production react-scripts build",
-      "storybook": "start-storybook -p 9009 -s public",
-      "build-storybook": "build-storybook -s public"
+      "storybook": "start-storybook -p 6006 -s public",
+      "build-storybook": "build-storybook -s public",
+      "lint": "eslint ."
     },
     "browserslist": {
       "production": [

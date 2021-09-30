@@ -1,3 +1,13 @@
+# 3.0.0 (Sept 30, 2021)
+* Update license year (no change to license)
+* Update README.md
+* Modify the `install dev-deps` npm script to include installation of eslint, plugins, and configs
+* Ensure all commonly used S4 NetQuest environment variable files are in .gitignore
+* Add ESLint configuration (`.eslintrc`)
+* Add some additional default environment variables
+* Extend directory structure and include templates
+* Add in basic react-router-dom routes and animated page transitions
+
 # 2.0.3 (July 19, 2021)
 * Fix analytics.js environment variable check
 * Update Bulma to v0.9.3
